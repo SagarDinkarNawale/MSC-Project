@@ -1,0 +1,14 @@
+<h1>This  Counter Page</h1></br>
+<h3><a href="{% url 'home_idintification_Name' %}">Back To HomePage</a> </h3>
+<h1>
+        {{id}}
+</h1>
+<h4>
+        {% for word,value in worddict %}
+        {{word}}={{value}}<br>
+        {%endfor%}
+    
+</h4>
+<h3>
+ Total Word Is=  {{length}}
+</h3>
